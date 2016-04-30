@@ -16,11 +16,11 @@ public class SnakeGo {
     private static Logger logger= LoggerFactory.getLogger(SnakeGo.class);
     public static void main(String[] args) {
         Snake snake=new Snake();
-        snake.setX(20);
-        snake.setY(20);
+        snake.setRow(39);
+        snake.setCol(1);
         Food food=new Food();
-        food.setX(40);
-        food.setY(40);
+        food.setRow(40);
+        food.setCol(40);
         SnakeField snakeField=new SnakeField(snake,food);
     }
 }

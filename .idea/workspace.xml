@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b64f1b2-ad90-4d4f-9248-2ee7f2619604" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/UnitColor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/constant/SnakeUnit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/constant/SnakeUnit.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/constant/Field.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/constant/Field.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/util/Pencil.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/util/Pencil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/domain/Snake.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/domain/Snake.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeField.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeGo.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeGo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Snake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SnakeField.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SnakeField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91193736">
+            <state vertical-scroll-proportion="0.0">
               <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="50" />
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -89,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+              <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -131,16 +118,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding />
+              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+              <folding>
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitColor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UnitColor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/UnitColor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.3816047">
               <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="e#168#169#0" expanded="true" />
@@ -177,13 +173,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/constant/SnakeUnit.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Unit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/UnitColor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" />
       </list>
     </option>
   </component>
@@ -1364,58 +1360,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="433" column="16" selection-start-line="433" selection-start-column="16" selection-end-line="433" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/UnitColor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1427,22 +1376,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91193736">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/domain/UnitColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3816047">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
           </folding>
         </state>
       </provider>

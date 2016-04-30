@@ -25,17 +25,17 @@ public class Pencil extends JPanel{
     public void paint(Graphics graphics){
         super.paint(graphics);
         playSnakeField(graphics);
-        drawUnit(food.getX(), food.getY(), UnitColor.RED, graphics);
-        drawUnit(snake.getX(), snake.getY(), UnitColor.BLACK, graphics);
+        drawUnit(food.getRow(), food.getCol(), UnitColor.RED, graphics);
+        drawUnit(snake.getRow(), snake.getCol(), UnitColor.BLACK, graphics);
     }
 
     /**
      * 以左上角为一个单元的起点，每个单元为运动场地的像素长度
-     * @param x
-     * @param y
+     * @param row
+     * @param col
      * @param graphics
      */
-    private  void drawUnit(int x,int y,UnitColor unitColor,Graphics graphics){
+    private  void drawUnit(int row,int col,UnitColor unitColor,Graphics graphics){
         Color origColor=graphics.getColor();
         if (unitColor.getValue() == 0)
         {
@@ -43,12 +43,12 @@ public class Pencil extends JPanel{
         }else if (unitColor.getValue() == 1){
             graphics.setColor(Color.RED);
         }
-        graphics.drawRect(x,y, Field.UNIT_PIX, Field.UNIT_PIX);
-        logger.info("drawUnit x1:{} y1:{} x2:{} y2:{}",new Object[]{x,y,x+Field.UNIT_PIX,y+Field.UNIT_PIX});
+        graphics.drawRect(row*Field.UNIT_PIX,col*Field.UNIT_PIX, Field.UNIT_PIX, Field.UNIT_PIX);
+        logger.info("drawUnit x1:{} y1:{}",new Object[]{row*Field.UNIT_PIX,col*Field.UNIT_PIX});
         graphics.setColor(origColor);
     }
     private void playSnakeField(Graphics graphics){
         graphics.drawRect(Field.SNAKE_FIELD_LOCATION_X,Field.SNAKE_FIELD_LOCATION_Y,
-                Field.SNAKE_FIELD_LOCATION_X+Field.WIDTH* Field.UNIT_PIX,Field.SNAKE_FIELD_LOCATION_Y+Field.HEIGHT* Field.UNIT_PIX);
+                Field.WIDTH* Field.UNIT_PIX,Field.HEIGHT* Field.UNIT_PIX);
     }
 }

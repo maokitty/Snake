@@ -4,21 +4,22 @@ package com.my.snake.domain;
  * Created by liwangchun on 16/4/16.
  */
 public class Snake {
-    private int x;
-    private int y;
-    public int getY() {
-        return y;
+    private int row;
+    private int col;
+
+    public int getRow() {
+        return row;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setRow(int row) {
+        this.row = row;
     }
 
-    public int getX() {
-        return x;
+    public int getCol() {
+        return col;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public void setCol(int col) {
+        this.col = col;
     }
 }
