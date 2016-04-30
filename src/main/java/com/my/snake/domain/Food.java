@@ -1,9 +1,9 @@
 package com.my.snake.domain;
 
 /**
- * Created by liwangchun on 16/4/16.
+ * Created by liwangchun on 16/4/30.
  */
-public class Snake {
+public class Food {
     private int x;
     private int y;
     public int getY() {

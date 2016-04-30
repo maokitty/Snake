@@ -1,6 +1,7 @@
 package com.my.snake.window;
 
 import com.my.snake.constant.Field;
+import com.my.snake.domain.Food;
 import com.my.snake.domain.Snake;
 import com.my.snake.util.Pencil;
 import org.slf4j.Logger;
@@ -18,14 +19,16 @@ public class SnakeField extends JFrame implements KeyListener{
     private static final Logger logger= LoggerFactory.getLogger(SnakeField.class);
     private Pencil pencil=null;
     private Snake snake;
-    public SnakeField(Snake snake){
+    private Food food;
+    public SnakeField(Snake snake,Food food){
         this.snake=snake;
-        pencil=new Pencil(snake);
+        pencil=new Pencil(snake,food);
         add(pencil);
         addKeyListener(this);
-        setTitle("蛇蛇蛇蛇");
-        setSize(new Dimension(Field.WIDTH, Field.HEIGHT));
-        setLocation(Field.LOCATION_X, Field.LOCATION_Y);
+        setTitle(Field.GAME_NAME);
+        setSize(new Dimension(Field.GANE_WIDTH, Field.GANE_HEIGHT));
+        setLocation(Field.GAME_LOCATION_X, Field.GAME_LOCATION_Y);
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
@@ -35,15 +38,14 @@ public class SnakeField extends JFrame implements KeyListener{
     }
 
     public void keyPressed(KeyEvent e) {
-        logger.info("SnakeField.keyPressed ",e.getKeyChar());
         if(e.getKeyCode() == KeyEvent.VK_DOWN){
-           snake.moveDown();
+//           snake.moveDown();
         } else if(e.getKeyCode() == KeyEvent.VK_UP){
-            snake.moveUp();
+//            snake.moveUp();
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT){
-            snake.moveLeft();
+//            snake.moveLeft();
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT){
-            snake.moveRight();
+//            snake.moveRight();
         }
         repaint();
     }

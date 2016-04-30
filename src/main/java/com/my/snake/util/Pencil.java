@@ -1,8 +1,9 @@
 package com.my.snake.util;
 
-import com.my.snake.constant.SnakeUnit;
+import com.my.snake.constant.Field;
+import com.my.snake.domain.Food;
 import com.my.snake.domain.Snake;
-import org.apache.log4j.PropertyConfigurator;
+import com.my.snake.domain.UnitColor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,40 +16,39 @@ import java.awt.*;
 public class Pencil extends JPanel{
     private static final Logger logger= LoggerFactory.getLogger(Pencil.class);
     private Snake snake;
-    public Pencil(Snake snake){
-      this.snake=snake;
+    private Food food;
+    public Pencil(Snake snake,Food food){
+        this.snake=snake;
+        this.food=food;
     }
     @Override
     public void paint(Graphics graphics){
-//        PropertyConfigurator.configure("src/main/resources/log4j.properties");
-        drawSnakeUnit(snake,graphics);
-    }
-    private  void drawSnakeUnit(Snake snake,Graphics pencil){
-        super.paint(pencil);
-        drawSnakeUnitUp(snake, pencil);
-        drawSnakeUnitDown(snake, pencil);
-        drawSnakeUnitLeft(snake, pencil);
-        drawSnakeUnitRight(snake,pencil);
-    }
-    private void drawSnakeUnitUp(Snake snake,Graphics pencil){
-        System.out.println("Pencil.drawSnakeUnitUp 1x:{} 1y:{} 2:x{} 2y:{}" + snake.getX() + ":" + snake.getY() + ":" + (snake.getX() + SnakeUnit.WIDTH) + ":" + snake.getY());
-        pencil.drawLine(snake.getX(), snake.getY(), snake.getX() + SnakeUnit.WIDTH, snake.getY());
-        logger.info("Pencil.drawSnakeUnitUp 1x:{} 1y:{} 2:x{} 2y:{}", snake.getX(), snake.getY(), snake.getX() + SnakeUnit.WIDTH, snake.getY());
-    }
-    private void drawSnakeUnitDown(Snake snake,Graphics pencil){
-        System.out.println("Pencil.drawSnakeUnitDown 1x:{} 1y:{} 2:x{} 2y:{}" + ":" + snake.getX() + ":" + snake.getY() + SnakeUnit.HEIGHT + ":" + snake.getX() + SnakeUnit.WIDTH + ":" + snake.getY() + SnakeUnit.HEIGHT);
-        pencil.drawLine(snake.getX(), snake.getY() + SnakeUnit.HEIGHT, snake.getX() + SnakeUnit.WIDTH, snake.getY() + SnakeUnit.HEIGHT);
-        logger.info("Pencil.drawSnakeUnitDown 1x:{} 1y:{} 2:x{} 2y:{}", snake.getX(), snake.getY() + SnakeUnit.HEIGHT, snake.getX() + SnakeUnit.WIDTH, snake.getY() + SnakeUnit.HEIGHT);
-    }
-    private void drawSnakeUnitLeft(Snake snake,Graphics pencil){
-        System.out.println("Pencil.drawSnakeUnitLeft 1x:{} 1y:{} 2:x{} 2y:{}" + ":" + snake.getX() + ":" + snake.getY() + ":" + snake.getX() + ":" + snake.getY() + SnakeUnit.HEIGHT);
-        pencil.drawLine(snake.getX(), snake.getY(), snake.getX(), snake.getY() + SnakeUnit.HEIGHT);
-        logger.info("Pencil.drawSnakeUnitLeft 1x:{} 1y:{} 2:x{} 2y:{}", snake.getX(), snake.getY(), snake.getX(), snake.getY() + SnakeUnit.HEIGHT);
-    }
-    private void drawSnakeUnitRight(Snake snake,Graphics pencil){
-        System.out.println("Pencil.drawSnakeUnitRight 1x:{} 1y:{} 2:x{} 2y:{}" + ":" + snake.getX() + SnakeUnit.WIDTH + ":" + snake.getY() + ":" + snake.getX() + SnakeUnit.WIDTH + ":" + snake.getY() + SnakeUnit.HEIGHT);
-        pencil.drawLine(snake.getX() + SnakeUnit.WIDTH, snake.getY(), snake.getX() + SnakeUnit.WIDTH, snake.getY() + SnakeUnit.HEIGHT);
-        logger.info("Pencil.drawSnakeUnitRight 1x:{} 1y:{} 2:x{} 2y:{}", snake.getX() + SnakeUnit.WIDTH, snake.getY(), snake.getX() + SnakeUnit.WIDTH, snake.getY() + SnakeUnit.HEIGHT);
+        super.paint(graphics);
+        playSnakeField(graphics);
+        drawUnit(food.getX(), food.getY(), UnitColor.RED, graphics);
+        drawUnit(snake.getX(), snake.getY(), UnitColor.BLACK, graphics);
     }
 
+    /**
+     * 以左上角为一个单元的起点，每个单元为运动场地的像素长度
+     * @param x
+     * @param y
+     * @param graphics
+     */
+    private  void drawUnit(int x,int y,UnitColor unitColor,Graphics graphics){
+        Color origColor=graphics.getColor();
+        if (unitColor.getValue() == 0)
+        {
+            graphics.setColor(Color.BLACK);
+        }else if (unitColor.getValue() == 1){
+            graphics.setColor(Color.RED);
+        }
+        graphics.drawRect(x,y, Field.UNIT_PIX, Field.UNIT_PIX);
+        logger.info("drawUnit x1:{} y1:{} x2:{} y2:{}",new Object[]{x,y,x+Field.UNIT_PIX,y+Field.UNIT_PIX});
+        graphics.setColor(origColor);
+    }
+    private void playSnakeField(Graphics graphics){
+        graphics.drawRect(Field.SNAKE_FIELD_LOCATION_X,Field.SNAKE_FIELD_LOCATION_Y,
+                Field.SNAKE_FIELD_LOCATION_X+Field.WIDTH* Field.UNIT_PIX,Field.SNAKE_FIELD_LOCATION_Y+Field.HEIGHT* Field.UNIT_PIX);
+    }
 }
