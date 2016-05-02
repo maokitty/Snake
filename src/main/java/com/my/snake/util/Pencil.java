@@ -1,8 +1,6 @@
 package com.my.snake.util;
 
 import com.my.snake.constant.Field;
-import com.my.snake.domain.Food;
-import com.my.snake.domain.Snake;
 import com.my.snake.domain.UnitColor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,18 +13,31 @@ import java.awt.*;
  */
 public class Pencil extends JPanel{
     private static final Logger logger= LoggerFactory.getLogger(Pencil.class);
-    private Snake snake;
-    private Food food;
-    public Pencil(Snake snake,Food food){
-        this.snake=snake;
-        this.food=food;
+    private int[] playField;
+    public Pencil(int[] playField){
+        this.playField=playField;
     }
     @Override
     public void paint(Graphics graphics){
         super.paint(graphics);
         playSnakeField(graphics);
-        drawUnit(food.getRow(), food.getCol(), UnitColor.RED, graphics);
-        drawUnit(snake.getRow(), snake.getCol(), UnitColor.BLACK, graphics);
+        for (int i=0;i<playField.length;i++)
+        {
+            if (playField[i] == Field.SNAKE_BODY || playField[i]== Field.FOOD)
+            {
+                int row=i/Field.COL;
+                int col=i%Field.COL;
+
+                if (playField[i] == Field.SNAKE_BODY)
+                {
+                    logger.info("row"+row+":"+col+":"+i);
+                    drawUnit(col, row, UnitColor.BLACK, graphics);//col -> x row -> y
+                }else{
+                    drawUnit(col, row, UnitColor.RED, graphics);
+                }
+
+            }
+        }
     }
 
     /**
@@ -43,12 +54,11 @@ public class Pencil extends JPanel{
         }else if (unitColor.getValue() == 1){
             graphics.setColor(Color.RED);
         }
-        graphics.drawRect(row*Field.UNIT_PIX,col*Field.UNIT_PIX, Field.UNIT_PIX, Field.UNIT_PIX);
-        logger.info("drawUnit x1:{} y1:{}",new Object[]{row*Field.UNIT_PIX,col*Field.UNIT_PIX});
+        graphics.drawRect(row * Field.UNIT_PIX + Field.SNAKE_FIELD_LOCATION_X, col * Field.UNIT_PIX+Field.SNAKE_FIELD_LOCATION_Y, Field.UNIT_PIX, Field.UNIT_PIX);//row ,col从0开始计数，但是整个游戏框有个偏移
         graphics.setColor(origColor);
     }
     private void playSnakeField(Graphics graphics){
         graphics.drawRect(Field.SNAKE_FIELD_LOCATION_X,Field.SNAKE_FIELD_LOCATION_Y,
-                Field.WIDTH* Field.UNIT_PIX,Field.HEIGHT* Field.UNIT_PIX);
+                Field.ROW* Field.UNIT_PIX,Field.COL* Field.UNIT_PIX);
     }
 }

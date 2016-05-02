@@ -1,7 +1,5 @@
 package com.my.snake.window;
 
-import com.my.snake.domain.Food;
-import com.my.snake.domain.Snake;
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,12 +13,6 @@ public class SnakeGo {
     }
     private static Logger logger= LoggerFactory.getLogger(SnakeGo.class);
     public static void main(String[] args) {
-        Snake snake=new Snake();
-        snake.setRow(39);
-        snake.setCol(1);
-        Food food=new Food();
-        food.setRow(40);
-        food.setCol(40);
-        SnakeField snakeField=new SnakeField(snake,food);
+        new SnakeField();
     }
 }
