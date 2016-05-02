@@ -38,4 +38,9 @@ public class Field {
     public static final int SPACE=FIELD_SIZE;
     public static final int SNAKE_BODY=2*FIELD_SIZE;
 
+    //分数显示的位置
+    public static final int SCORE_X=500;
+    public static final int SCORE_Y=100;
+    public static int SCORE=0;
+
 }

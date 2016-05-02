@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b64f1b2-ad90-4d4f-9248-2ee7f2619604" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/service/MoveSnake.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/domain/Snake.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/constant/Field.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/constant/Field.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/util/Pencil.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/util/Pencil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeField.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeGo.class" afterPath="$PROJECT_DIR$/target/classes/com/my/snake/window/SnakeGo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" afterPath="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Snake.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#419#420#0" expanded="true" />
@@ -51,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SnakeField.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SnakeField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33268103">
-              <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,21 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeyEvent.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/event/KeyEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Field.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.7358121">
+              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -87,12 +67,24 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="128" selection-start-line="56" selection-start-column="128" selection-end-line="56" selection-end-column="128" />
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
                 <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graphics.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,9 +118,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Snake.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/domain/Food.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java" />
       </list>
     </option>
   </component>
@@ -575,7 +567,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19957082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21816881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -671,6 +663,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,6 +731,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,6 +946,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1346,14 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="433" column="16" selection-start-line="433" selection-start-column="16" selection-end-line="433" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14677104">
@@ -1370,10 +1360,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103">
+          <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.62818">
+          <caret line="119" column="11" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeGo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
@@ -1382,18 +1388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/event/KeyEvent.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <caret line="782" column="25" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1401,22 +1399,32 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/util/Pencil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="128" selection-start-line="56" selection-start-column="128" selection-end-line="56" selection-end-column="128" />
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/window/SnakeField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33268103">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/snake/constant/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7358121">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Random;
 
 /**
  * Created by liwangchun on 16/4/16.
@@ -16,7 +17,7 @@ import java.awt.event.KeyListener;
 public class SnakeField extends JFrame implements KeyListener{
     private static final Logger logger= LoggerFactory.getLogger(SnakeField.class);
     private Pencil pencil=null;
-    int[] snakeBody=new int[Field.FIELD_SIZE]; //snakeBody里面放的都是从头到尾所有身体所在的位置
+    int[] snakeBody=new int[Field.FIELD_SIZE+1]; //snakeBody里面放的都是从头到尾所有身体所在的位置
     int[] playField=new int[Field.FIELD_SIZE];
     int snakeSize;
     int HEAD=0;
@@ -43,28 +44,63 @@ public class SnakeField extends JFrame implements KeyListener{
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() == KeyEvent.VK_DOWN){
             if (isMovePossible(snakeBody[HEAD],Field.DOWN)){
-                snakeBody[HEAD]+=Field.DOWN;
-                playFieldReset(snakeBody, snakeSize, playField);
+                makeMove(snakeBody,playField,Field.DOWN);
             }
         } else if(e.getKeyCode() == KeyEvent.VK_UP){
             if (isMovePossible(snakeBody[HEAD],Field.UP)){
-                snakeBody[HEAD]+=Field.UP;
-                playFieldReset(snakeBody, snakeSize, playField);
+                makeMove(snakeBody,playField,Field.UP);
             }
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT){
             if (isMovePossible(snakeBody[HEAD],Field.LEFT)){
-                snakeBody[HEAD]+=Field.LEFT;
-                playFieldReset(snakeBody, snakeSize, playField);
+                makeMove(snakeBody,playField,Field.LEFT);
             }
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT){
             if (isMovePossible(snakeBody[HEAD],Field.RIGHT)){
-                logger.info("before"+snakeBody[HEAD]);
-                snakeBody[HEAD]+=Field.RIGHT;
-                logger.info("after"+snakeBody[HEAD]);
-                playFieldReset(snakeBody,snakeSize,playField);
+               makeMove(snakeBody,playField,Field.RIGHT);
             }
         }
         repaint();
+    }
+
+    private void makeMove(int[] snakeBody,int[] playField,int step){
+        if (snakeBody[HEAD]+step!=food){
+            shiftSnakeBody(snakeBody,snakeSize);//每个的坐标都是紧挨着的
+            snakeBody[HEAD]+=step;
+            playField[snakeBody[HEAD]]=Field.SNAKE_BODY;
+            playField[snakeBody[snakeSize]]=Field.SPACE;
+            playFieldReset(snakeBody, snakeSize, playField);
+        }else{
+            snakeSize+=1;
+            Field.SCORE+=1;
+            playField[food]=Field.SNAKE_BODY;
+            shiftSnakeBody(snakeBody,snakeSize);
+            snakeBody[HEAD]+=step;
+            food=newFood(snakeSize,snakeBody);
+            playFieldReset(snakeBody, snakeSize, playField);
+        }
+    }
+
+    private int newFood(int snakeSize,int[]snakeBody){
+        int food=-1;
+        boolean cellFree=false;
+        while (!cellFree){
+            int col=new Random().nextInt(Field.COL);
+            int row=new Random().nextInt(Field.ROW);
+            food=row*Field.ROW+col;
+            cellFree=isCellFree(food,snakeSize,snakeBody);
+        }
+        return food;
+    }
+
+    /**
+     * 保证0的下标一直是蛇头
+     * @param snakeBody
+     * @param snakeSize
+     */
+    private void shiftSnakeBody(int[]snakeBody,int snakeSize){
+        for (int i=snakeSize;i>0;i--){
+            snakeBody[i]=snakeBody[i-1];
+        }
     }
 
     private void playFieldReset(int []snakeBody,int pSize,int[] playField){
@@ -93,6 +129,8 @@ public class SnakeField extends JFrame implements KeyListener{
      * @return 往4个方向是否可以移动
      */
     private boolean isMovePossible(int idx,int move){
+        if (playField[idx+move] == Field.SNAKE_BODY) //蛇身不可以穿越
+            return false;
        switch(move){
            case Field.LEFT:
                if (idx%Field.COL >0) {

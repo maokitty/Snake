@@ -21,6 +21,13 @@ public class Pencil extends JPanel{
     public void paint(Graphics graphics){
         super.paint(graphics);
         playSnakeField(graphics);
+        drawSnakeAndFood(graphics);
+        drawScore(graphics);
+    }
+    private void drawScore(Graphics graphics){
+        graphics.drawString(Field.SCORE + "", Field.SCORE_X,Field.SCORE_Y);
+    }
+    private void drawSnakeAndFood(Graphics graphics){
         for (int i=0;i<playField.length;i++)
         {
             if (playField[i] == Field.SNAKE_BODY || playField[i]== Field.FOOD)
